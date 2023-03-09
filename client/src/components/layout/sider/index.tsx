@@ -186,7 +186,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 margin: "10px auto",
                 borderRadius: "12px",
                 minHeight: "56px",
-                width: "90%",
+                width: "90%"
               }}
             >
               <ListItemIcon
@@ -205,7 +205,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                   fontSize: "16px",
                   fontWeight: isSelected ? "bold" : "normal",
                   color: isSelected ? "#fff" : "#808191",
-                  marginLeft: "10px",
+                  marginLeft: "10px"
                 }}
               />
             </ListItemButton>
@@ -248,7 +248,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               minWidth: 36,
               color: "#808191",
               marginLeft: "6px",
-              marginRight: "14px",
+              marginRight: "14px"
             }}
           >
             <Dashboard />
@@ -276,12 +276,12 @@ export const Sider: typeof DefaultSider = ({ render }) => {
       <ListItemButton
         key="logout"
         onClick={() => mutateLogout()}
-        sx={{
-          justifyContent: "center",
+        sx={{ 
+          justifyContent: "center" ,
           margin: "10px auto",
           borderRadius: "12px",
           minHeight: "56px",
-          width: "90%",
+          width: "90%"
         }}
       >
         <ListItemIcon
@@ -420,7 +420,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               borderTop: "1px solid #ffffff1a",
               "&:hover": {
                 background: "#1e36e8"
-              }              
+              }
             }}
             fullWidth
             size="large"
