@@ -19,9 +19,9 @@ const TotalRevenue = () => {
         Total Revenue
       </Typography>
 
-      <Stack my={20} direction="row" gap={4} flexWrap="wrap">
+      <Stack my="20px" direction="row" gap={4} flexWrap="wrap">
         <Typography fontSize={28} fontWeight={700}color="#11142d">$236,535{/*₹1,93,40,000*/}</Typography>
-        <Stack direction="row">
+        <Stack direction="row" alignItems="center" gap={1}>
           <ArrowCircleUpRounded sx={{ fontSize: 25, color: "#475be8" }} />
           <Stack>
             <Typography fontSize={15} color="#475be8">
@@ -33,6 +33,12 @@ const TotalRevenue = () => {
           </Stack>
         </Stack>
       </Stack>
+      <ReactApexChart 
+        series={TotalRevenueSeries}
+        type="bar"
+        height={310}
+        options={TotalRevenueOptions}
+      />
     </Box>
   )
 }
